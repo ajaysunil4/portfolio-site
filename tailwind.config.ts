@@ -68,6 +68,11 @@ export default {
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
+			boxShadow: {
+				'glass': 'var(--shadow-glass)',
+				'elevation': 'var(--shadow-elevation)',
+				'hover': 'var(--shadow-hover)'
+			},
 			backdropBlur: {
 				'xs': '2px',
 			},
