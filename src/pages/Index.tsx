@@ -5,6 +5,9 @@ import { ScrollIndicator } from "@/components/ScrollIndicator";
 import { SkillCard } from "@/components/SkillCard";
 import { ProjectCard } from "@/components/ProjectCard";
 import heroPortrait from "@/assets/hero-portrait.jpg";
+import projectAiGenerator from "@/assets/project-ai-generator.jpg";
+import projectCloudAnalytics from "@/assets/project-cloud-analytics.jpg";
+import projectDocumentProcessor from "@/assets/project-document-processor.jpg";
 
 const skills = [
   {
@@ -37,7 +40,7 @@ const projects = [
   {
     title: "AI-Powered Content Generator",
     description: "A full-stack GenAI application that creates personalized content using GPT models and Azure Cognitive Services. Features real-time collaboration and intelligent content optimization.",
-    image: "/placeholder.svg",
+    image: projectAiGenerator,
     technologies: ["React", "Node.js", "OpenAI GPT", "Azure ML", "MongoDB"],
     githubUrl: "#",
     liveUrl: "#",
@@ -46,7 +49,7 @@ const projects = [
   {
     title: "Cloud Analytics Dashboard",
     description: "Real-time analytics platform built on Azure infrastructure with machine learning insights and predictive modeling.",
-    image: "/placeholder.svg", 
+    image: projectCloudAnalytics, 
     technologies: ["Next.js", "Azure Functions", "CosmosDB", "Power BI"],
     githubUrl: "#",
     liveUrl: "#"
@@ -54,7 +57,7 @@ const projects = [
   {
     title: "Smart Document Processor",
     description: "GenAI-powered document analysis tool using Azure Form Recognizer and custom ML models for intelligent data extraction.",
-    image: "/placeholder.svg",
+    image: projectDocumentProcessor,
     technologies: ["Python", "Azure AI", "FastAPI", "React", "Docker"],
     githubUrl: "#",
     liveUrl: "#"
