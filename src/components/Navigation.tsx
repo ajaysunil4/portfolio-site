@@ -38,7 +38,7 @@ export function Navigation() {
   };
 
   return (
-    <nav className="fixed top-8 left-1/2 transform -translate-x-1/2 z-50 glass-card px-6 py-4">
+    <nav className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 glass-card px-6 py-4">
       <div className="flex items-center gap-8">
         <div className="flex items-center gap-6">
           {sections.map(({ id, label }) => (

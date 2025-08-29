@@ -1,4 +1,4 @@
-import { ArrowDown, Code, Database, Brain, Cloud, Mail, Github, Linkedin, ExternalLink } from "lucide-react";
+import { ArrowDown, Code, Database, Brain, Cloud, Mail, Github, Linkedin, ExternalLink, Wrench } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Navigation } from "@/components/Navigation";
 import { ScrollIndicator } from "@/components/ScrollIndicator";
@@ -10,58 +10,59 @@ import projectCloudAnalytics from "@/assets/project-cloud-analytics.jpg";
 import projectDocumentProcessor from "@/assets/project-document-processor.jpg";
 
 const skills = [
-  {
-    title: "Frontend Development",
-    description: "Creating beautiful, responsive user interfaces with modern frameworks and cutting-edge design systems.",
-    icon: Code,
-    technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Framer Motion"]
-  },
-  {
-    title: "Backend Development", 
-    description: "Building scalable APIs and server-side solutions with robust architecture and clean code practices.",
-    icon: Database,
-    technologies: ["Node.js", "Python", "Express", "PostgreSQL", "MongoDB"]
-  },
-  {
-    title: "GenAI & ML",
-    description: "Developing intelligent applications with generative AI, machine learning models, and data-driven solutions.",
-    icon: Brain,
-    technologies: ["OpenAI GPT", "LangChain", "TensorFlow", "PyTorch", "Hugging Face"]
-  },
-  {
-    title: "Azure Cloud",
-    description: "Deploying and managing cloud infrastructure with Azure services for scalable, secure applications.",
-    icon: Cloud,
-    technologies: ["Azure Functions", "Azure ML", "Cosmos DB", "App Service", "DevOps"]
-  }
+{
+  title: "Frontend Development",
+  description: "Creating beautiful, responsive user interfaces with modern frameworks and design systems.",
+  icon: Code,
+  technologies: ["React", "Angular", "HTML", "CSS", "Bootstrap"]
+},
+{
+  title: "Backend & Cloud Services", 
+  description: "Building scalable APIs, integrating databases, and deploying applications with Azure cloud services.",
+  icon: Database,
+  technologies: ["Python", "FastAPI", "Elasticsearch", "Azure AI Search", "Azure Services"]
+},
+{
+  title: "GenAI & AI Integration",
+  description: "Developing intelligent applications with generative AI, cognitive services, and retrieval-augmented generation.",
+  icon: Brain,
+  technologies: ["OpenAI", "Azure Cognitive Services", "RAG"]
+},
+{
+  title: "DevOps & Tools",
+  description: "Streamlining development workflows with version control, collaboration platforms, and modern IDEs.",
+  icon: Wrench,
+  technologies: ["Git", "GitHub", "GitLab", "VS Code", "Cursor"]
+}
+
 ];
 
 const projects = [
-  {
-    title: "AI-Powered Content Generator",
-    description: "A full-stack GenAI application that creates personalized content using GPT models and Azure Cognitive Services. Features real-time collaboration and intelligent content optimization.",
-    image: projectAiGenerator,
-    technologies: ["React", "Node.js", "OpenAI GPT", "Azure ML", "MongoDB"],
-    githubUrl: "#",
-    liveUrl: "#",
-    featured: true
-  },
-  {
-    title: "Cloud Analytics Dashboard",
-    description: "Real-time analytics platform built on Azure infrastructure with machine learning insights and predictive modeling.",
-    image: projectCloudAnalytics, 
-    technologies: ["Next.js", "Azure Functions", "CosmosDB", "Power BI"],
-    githubUrl: "#",
-    liveUrl: "#"
-  },
-  {
-    title: "Smart Document Processor",
-    description: "GenAI-powered document analysis tool using Azure Form Recognizer and custom ML models for intelligent data extraction.",
-    image: projectDocumentProcessor,
-    technologies: ["Python", "Azure AI", "FastAPI", "React", "Docker"],
-    githubUrl: "#",
-    liveUrl: "#"
-  }
+{
+  title: "AuraF2 – Search and Data Indexing Platform",
+  description: "Developed indexing connectors, chatbot integrations, and RAG-powered search. Enabled intelligent data ingestion and NLP-driven search precision.",
+  image: projectAiGenerator,
+  technologies: ["FastAPI", "Elasticsearch", "Python"],
+  githubUrl: "#",
+  liveUrl: "#",
+  featured: true
+},
+{
+  title: "Generative AI Chatbot for Microsoft Teams",
+  description: "Built a chatbot to query organizational resources using RAG, storing interactions in Azure Blob Storage. Enabled real-time feedback and improved service delivery.",
+  image: projectCloudAnalytics,
+  technologies: ["OpenAI", "Azure Bot Services", "Azure Functions", "Python", "Azure Blob Storage"],
+  githubUrl: "#",
+  liveUrl: "#"
+},
+{
+  title: "SkillSens UI Development",
+  description: "Implemented dynamic skill-weight adjustment and responsive UI enhancements. Led UI improvements for intuitive user interactions.",
+  image: projectDocumentProcessor,
+  technologies: ["ReactJS"],
+  githubUrl: "#",
+  liveUrl: "#"
+}
 ];
 
 const Index = () => {
@@ -166,15 +167,15 @@ const Index = () => {
             <div className="flex justify-center gap-6">
               <Button size="lg" className="btn-primary-glass">
                 <Mail className="h-5 w-5 mr-2" />
-                hello@yourname.com
+                <a href="mailto:ajaysunil84@gmail.com">ajaysunil84@gmail.com</a>
               </Button>
               <Button variant="outline" size="lg" className="glass-card">
                 <Github className="h-5 w-5 mr-2" />
-                GitHub
+                <a href="https://github.com/ajaysunil4" target="_blank" rel="noopener noreferrer">GitHub</a>
               </Button>
               <Button variant="outline" size="lg" className="glass-card">
                 <Linkedin className="h-5 w-5 mr-2" />
-                LinkedIn
+                <a href="https://www.linkedin.com/in/ajay-sunil" target="_blank" rel="noopener noreferrer">LinkedIn</a>
               </Button>
             </div>
           </div>
@@ -185,7 +186,7 @@ const Index = () => {
       <footer className="py-12 px-6 border-t border-border">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-muted-foreground">
-            © 2024 Your Name. Crafted with precision and passion.
+            © 2025 Ajay Sunil. Crafted with precision and passion.
           </p>
         </div>
       </footer>
